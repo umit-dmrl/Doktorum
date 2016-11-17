@@ -9,6 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
+/*
+Proje Adı : Doktorum
+Proje Geliştiricisi : Ümit DEMİREL
+Proje Amaç / Kapsamı : Hastanelerin Ve Hastanelere Bağlı Doktorların Yönetimini Sağlamak Ve Hastaların Randevu Almalarını Sağlamak
+Sürüm : V1
+*/
+
 namespace Doktorum
 {
     public partial class AnaForm : Form
