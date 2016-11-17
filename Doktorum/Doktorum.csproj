@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71FC7A98-60C0-4BA6-B446-F8096527352B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Doktorum</RootNamespace>
+    <AssemblyName>Doktorum</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Ümit\Desktop\Project\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9410D5D0B2E55D667768E3B2E93B358EC8980AF0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Doktorum_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalismaGunleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalismaGunleri.Designer.cs">
+      <DependentUpon>CalismaGunleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalismaGunleriUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalismaGunleriUpdate.Designer.cs">
+      <DependentUpon>CalismaGunleriUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassYoneticiGirisi.cs" />
+    <Compile Include="GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaBilgileri.cs" />
+    <Compile Include="HastaneDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaneDetay.Designer.cs">
+      <DependentUpon>HastaneDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaneGuncelle.Designer.cs">
+      <DependentUpon>HastaneGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaneKayit.Designer.cs">
+      <DependentUpon>HastaneKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaneListesi.Designer.cs">
+      <DependentUpon>HastaneListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HekimBilgileriniGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HekimBilgileriniGuncelle.Designer.cs">
+      <DependentUpon>HekimBilgileriniGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HekimDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HekimDetay.Designer.cs">
+      <DependentUpon>HekimDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HekimEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HekimEkleme.Designer.cs">
+      <DependentUpon>HekimEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HekimUpdateProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HekimUpdateProcess.Designer.cs">
+      <DependentUpon>HekimUpdateProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGirisFormu.Designer.cs">
+      <DependentUpon>KullaniciGirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciRandevuFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciRandevuFormu.Designer.cs">
+      <DependentUpon>KullaniciRandevuFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliklinikAtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliklinikAtama.Designer.cs">
+      <DependentUpon>PoliklinikAtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliklinikEkleGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliklinikEkleGuncelle.Designer.cs">
+      <DependentUpon>PoliklinikEkleGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Randevu.cs" />
+    <Compile Include="RandevuAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuAl.Designer.cs">
+      <DependentUpon>RandevuAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandevuSorgula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuSorgula.Designer.cs">
+      <DependentUpon>RandevuSorgula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Randevu_HastaneFiltre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Randevu_HastaneFiltre.Designer.cs">
+      <DependentUpon>Randevu_HastaneFiltre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veritabani.cs" />
+    <Compile Include="YoneticiGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiGirisi.Designer.cs">
+      <DependentUpon>YoneticiGirisi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalismaGunleri.resx">
+      <DependentUpon>CalismaGunleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalismaGunleriUpdate.resx">
+      <DependentUpon>CalismaGunleriUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaneDetay.resx">
+      <DependentUpon>HastaneDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaneGuncelle.resx">
+      <DependentUpon>HastaneGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaneKayit.resx">
+      <DependentUpon>HastaneKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaneListesi.resx">
+      <DependentUpon>HastaneListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HekimBilgileriniGuncelle.resx">
+      <DependentUpon>HekimBilgileriniGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HekimDetay.resx">
+      <DependentUpon>HekimDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HekimEkleme.resx">
+      <DependentUpon>HekimEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HekimUpdateProcess.resx">
+      <DependentUpon>HekimUpdateProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGirisFormu.resx">
+      <DependentUpon>KullaniciGirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciRandevuFormu.resx">
+      <DependentUpon>KullaniciRandevuFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliklinikAtama.resx">
+      <DependentUpon>PoliklinikAtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliklinikEkleGuncelle.resx">
+      <DependentUpon>PoliklinikEkleGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RandevuAl.resx">
+      <DependentUpon>RandevuAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandevuSorgula.resx">
+      <DependentUpon>RandevuSorgula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Randevu_HastaneFiltre.resx">
+      <DependentUpon>Randevu_HastaneFiltre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiGirisi.resx">
+      <DependentUpon>YoneticiGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Doktorum_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head_physician.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arama.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onay.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalp.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange_next.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zaman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takvim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
